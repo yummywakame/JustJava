@@ -1,0 +1,34 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Sólo Java</string>
+    <string name="logo_image">@drawable/justjavalogo_es</string>
+    <!-- Input Fields [CHAR LIMIT=20] -->
+    <string name="input_name">Nombre</string>
+    <!-- Headings [CHAR LIMIT=20] -->
+    <string name="heading_toppings">Cubiertas extra</string>
+    <string name="heading_quantity">Cantidad</string>
+    <string name="heading_order_summary">Resumen del pedido</string>
+    <!-- Checkboxes [CHAR LIMIT=20] -->
+    <string name="whipped_cream">Crema batida</string>
+    <string name="chocolate">Chocolate</string>
+    <!-- Order Summary Items [NO CHAR LIMIT] -->
+    <string name="email_subject">Sólo java para <xliff:g id="orderName" example="Amy">%s</xliff:g></string>
+    <string name="coffee_quantity">Cantidad: <xliff:g id="coffeeQuantity" example="2">%d</xliff:g></string>
+    <string name="email_name">Nombre: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="add_whipped_cream">Agregue la crema batida? <xliff:g id="extraWhippedCream" example="Sí, por favor!">%s</xliff:g></string>
+    <string name="add_chocolate">Agregue el chocolate? <xliff:g id="extraChocolate" example="Sí, por favor!">%s</xliff:g></string>
+    <string name="total">Total: <xliff:g id="price" example="$10">%s</xliff:g></string>
+    <string name="thank_you">¡Gracias!</string>
+    <!-- Buttons -->
+    <string name="plus_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="submit_order_button">Ordenar</string>
+    <!-- YES / NO Responses -->
+    <string name="yes_please">Sí, por favor!</string>
+    <string name="no_thanks">No, gracias.</string>
+    <!-- Display Fields -->
+    <string name="number_of_coffees">1</string>
+    <!-- Toast message displayed when the customer tries to request more than 100 coffees -->
+    <string name="too_many_coffees">No se pueden pedir más de 100 cafés.</string>
+    <!-- Toast message displayed when the customer tries to request less than 1 coffee -->
+    <string name="too_few_coffees">No se pueden pedir menos de 1 café.</string>
+</resources>
