@@ -1,11 +1,3 @@
-/**
- * IMPORTANT: Make sure you are using the correct package name.
- * This example uses the package name:
- * package com.example.android.justjava
- * If you get an error when copying this code into Android studio, update it to match the package name found
- * in the project's AndroidManifest.xml file.
- **/
-
 package com.example.android.justjava;
 
 import android.content.Intent;
@@ -37,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     String priceMessage;
     String newline = System.getProperty("line.separator");
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
         // NAME:
-        EditText textFieldName = (EditText) findViewById(R.id.textfield_name);
+        EditText textFieldName = (findViewById(R.id.textfield_name));
         // Convert it to a string
         String orderName = textFieldName.getText().toString();
 
         // CHECK FOR WHIPPED CREAM:
-        CheckBox checkboxWhippedCream = (CheckBox) findViewById(R.id.checkbox_whipped_cream);
+        CheckBox checkboxWhippedCream = findViewById(R.id.checkbox_whipped_cream);
         // Call a method to find out if the checkboxes are checked
         boolean hasWhippedCream = checkboxWhippedCream.isChecked();
         // Change true/false response to yes/no in preferred language
@@ -66,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         // Log.v("MainActivity", "Has whipped cream: " + hasWhippedCream);
 
         // CHECK FOR CHOCOLATE:
-        CheckBox checkboxChocolate = (CheckBox) findViewById(R.id.checkbox_chocolate);
+        CheckBox checkboxChocolate = findViewById(R.id.checkbox_chocolate);
         // Call a method to find out if the checkboxes are checked
         boolean hasChocolate = checkboxChocolate.isChecked();
         // Change true/false response to yes/no in preferred language
@@ -160,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given coffeeQuantity value on the screen.
      */
     private void displayQuantity(int numberOfCoffees) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        TextView quantityTextView = findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + numberOfCoffees);
     }
 
@@ -171,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
         // By putting TextView in parentheses, we are casting the whole findViewByID()
         // which is a View into a TextView so that it is valid.
         // Then we can store that in the variable on the LHS which is also a type TextView.
-        TextView order_summary_text_view = (TextView) findViewById(R.id.order_summary_text_view);
+        TextView order_summary_text_view = findViewById(R.id.order_summary_text_view);
         // Now we can call TextView methods for this object like setText.
         // Otherwise setText would not be an option.
         // There is no setText for a View object, only for a TextView.
